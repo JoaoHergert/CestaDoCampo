@@ -12,6 +12,11 @@
 		A9CABFF51FACF7B000014BB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CABFF31FACF7B000014BB0 /* Main.storyboard */; };
 		A9CABFF71FACF7B000014BB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CABFF61FACF7B000014BB0 /* Assets.xcassets */; };
 		A9CABFFA1FACF7B000014BB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CABFF81FACF7B000014BB0 /* LaunchScreen.storyboard */; };
+		A9CAC0061FAD019500014BB0 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CAC0051FAD019500014BB0 /* Home.storyboard */; };
+		A9CAC0091FAD01D400014BB0 /* Producer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CAC0071FAD01D400014BB0 /* Producer.storyboard */; };
+		A9CAC00B1FAD026600014BB0 /* Basket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CAC00A1FAD026600014BB0 /* Basket.storyboard */; };
+		A9CAC00E1FAD028A00014BB0 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CAC00C1FAD028A00014BB0 /* Chat.storyboard */; };
+		A9CAC0101FAD02B500014BB0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CAC00F1FAD02B500014BB0 /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		A9CABFF61FACF7B000014BB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CABFF91FACF7B000014BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9CABFFB1FACF7B000014BB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CAC0051FAD019500014BB0 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A9CAC0081FAD01D400014BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CestaDoCampo/Base.lproj/Producer.storyboard; sourceTree = "<group>"; };
+		A9CAC00A1FAD026600014BB0 /* Basket.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Basket.storyboard; sourceTree = "<group>"; };
+		A9CAC00D1FAD028A00014BB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CestaDoCampo/Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
+		A9CAC00F1FAD02B500014BB0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 				A9CABFEF1FACF7B000014BB0 /* AppDelegate.swift */,
 				A9CABFF11FACF7B000014BB0 /* ViewController.swift */,
 				A9CABFF31FACF7B000014BB0 /* Main.storyboard */,
+				A9CAC00F1FAD02B500014BB0 /* Profile.storyboard */,
+				A9CAC0051FAD019500014BB0 /* Home.storyboard */,
+				A9CAC0071FAD01D400014BB0 /* Producer.storyboard */,
+				A9CAC00A1FAD026600014BB0 /* Basket.storyboard */,
+				A9CAC00C1FAD028A00014BB0 /* Chat.storyboard */,
 				A9CABFF61FACF7B000014BB0 /* Assets.xcassets */,
 				A9CABFF81FACF7B000014BB0 /* LaunchScreen.storyboard */,
 				A9CABFFB1FACF7B000014BB0 /* Info.plist */,
@@ -123,9 +138,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CAC00E1FAD028A00014BB0 /* Chat.storyboard in Resources */,
 				A9CABFFA1FACF7B000014BB0 /* LaunchScreen.storyboard in Resources */,
+				A9CAC0101FAD02B500014BB0 /* Profile.storyboard in Resources */,
+				A9CAC0091FAD01D400014BB0 /* Producer.storyboard in Resources */,
+				A9CAC00B1FAD026600014BB0 /* Basket.storyboard in Resources */,
 				A9CABFF71FACF7B000014BB0 /* Assets.xcassets in Resources */,
 				A9CABFF51FACF7B000014BB0 /* Main.storyboard in Resources */,
+				A9CAC0061FAD019500014BB0 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +178,22 @@
 				A9CABFF91FACF7B000014BB0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9CAC0071FAD01D400014BB0 /* Producer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CAC0081FAD01D400014BB0 /* Base */,
+			);
+			name = Producer.storyboard;
+			sourceTree = "<group>";
+		};
+		A9CAC00C1FAD028A00014BB0 /* Chat.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CAC00D1FAD028A00014BB0 /* Base */,
+			);
+			name = Chat.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZL2ZS7T3D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CestaDoCampo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.CestaDoCampo;
@@ -290,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2ZL2ZS7T3D;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CestaDoCampo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.CestaDoCampo;
