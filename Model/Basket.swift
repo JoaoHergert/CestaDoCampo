@@ -6,19 +6,41 @@
 //  Copyright © 2017 João Hergert. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+/// Basket Model
 class Basket {
 
+    /// Id of basket
     public var id: Int?
+
+    /// Name of basket
     public var name: String?
+
+    /// Description
+    public var description: String?
+
+    /// Standard weight of basket
     public var weight: Double?
+
+    /// Basket width size
     public var width: Int?
+
+    /// Basket height size
     public var height: Int?
+
+    /// Basket depth size
     public var depth: Int?
+
+    /// Basket price
     public var price: Double?
-    public var producer: Producer?
+
+    /// Is this basket active
     public var active: Bool?
-    public var obs: String?
+
+    public var photo: UIImage?
+
+    /// Producer
+    public weak var producer: Producer?
 
 }
