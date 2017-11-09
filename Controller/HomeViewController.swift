@@ -9,9 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    @IBOutlet weak var photo: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Do any additional setup after loading the view.
     }
@@ -37,11 +42,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 4
     }
     
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Produtores"
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "home", for: indexPath) as! ProducerTableViewCell
         
-        cell.name.text = "teste"
+        cell.name.text = "Produtor da Silva"
+        cell.pickup.text = "Rua Josué de Alencar, 45 - Campinas"
+        cell.photo.layer.cornerRadius = 50
+        cell.photo.image = #imageLiteral(resourceName: "temp_prod")
+        cell.photo.clipsToBounds = true
+        
         
         return cell
     }

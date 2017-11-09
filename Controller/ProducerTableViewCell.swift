@@ -12,9 +12,12 @@ class ProducerTableViewCell: UITableViewCell {
 
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var photo: UIImageView!
+    @IBOutlet weak var pickup: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         // Initialization code
     }
 
@@ -23,5 +26,6 @@ class ProducerTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }
