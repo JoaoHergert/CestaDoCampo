@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DBD68811FB4D849003A029A /* BatrasketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD68801FB4D849003A029A /* BatrasketItem.swift */; };
+		6DBD68811FB4D849003A029A /* BasketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBD68801FB4D849003A029A /* BasketItem.swift */; };
 		A97F92C61FB4BCA900784B24 /* ProducerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F92C51FB4BCA900784B24 /* ProducerTableViewCell.swift */; };
 		A97F92C91FB4CFCA00784B24 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F92C81FB4CFCA00784B24 /* Basket.swift */; };
 		A97F92CB1FB4D0B800784B24 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97F92CA1FB4D0B800784B24 /* Producer.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6DBD68801FB4D849003A029A /* BatrasketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatrasketItem.swift; sourceTree = "<group>"; };
+		6DBD68801FB4D849003A029A /* BasketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketItem.swift; sourceTree = "<group>"; };
 		A97F92C51FB4BCA900784B24 /* ProducerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducerTableViewCell.swift; sourceTree = "<group>"; };
 		A97F92C81FB4CFCA00784B24 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
 		A97F92CA1FB4D0B800784B24 /* Producer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				A97F92C81FB4CFCA00784B24 /* Basket.swift */,
 				A97F92CA1FB4D0B800784B24 /* Producer.swift */,
-				6DBD68801FB4D849003A029A /* BatrasketItem.swift */,
+				6DBD68801FB4D849003A029A /* BasketItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,7 +199,7 @@
 				A97F92C61FB4BCA900784B24 /* ProducerTableViewCell.swift in Sources */,
 				A9CABFF01FACF7B000014BB0 /* AppDelegate.swift in Sources */,
 				A97F92CB1FB4D0B800784B24 /* Producer.swift in Sources */,
-				6DBD68811FB4D849003A029A /* BatrasketItem.swift in Sources */,
+				6DBD68811FB4D849003A029A /* BasketItem.swift in Sources */,
 				A9BEDD5D1FAD47D000AEE857 /* HomeViewController.swift in Sources */,
 				A97F92C91FB4CFCA00784B24 /* Basket.swift in Sources */,
 			);
