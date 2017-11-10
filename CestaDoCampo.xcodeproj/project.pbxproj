@@ -82,7 +82,7 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		A97F92C71FB4CF6200784B24 /* Model */ = {
+		6D9C2A111FB6032F005EF27E /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				A97F92C81FB4CFCA00784B24 /* Basket.swift */,
@@ -95,6 +95,13 @@
 				6DBD688A1FB4E5F4003A029A /* Product.swift */,
 				6DBD688C1FB4E684003A029A /* AvailableItem.swift */,
 				6DBD688E1FB4E77C003A029A /* OrderedItem.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A97F92C71FB4CF6200784B24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		A9CABFE31FACF7B000014BB0 = {
 			isa = PBXGroup;
 			children = (
+				6D9C2A111FB6032F005EF27E /* Entity */,
 				6D9C2A0C1FB4F09D005EF27E /* Service */,
 				A97F92C71FB4CF6200784B24 /* Model */,
 				A9BEDD5B1FAD47A600AEE857 /* Controller */,
