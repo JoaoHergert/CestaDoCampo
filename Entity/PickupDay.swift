@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Pickup day of week model
+/// Pickup day of week entity
 class PickupDay {
 
     /// Id of puckup day

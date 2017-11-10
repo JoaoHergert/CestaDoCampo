@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// ORdered Item model
+/// ORdered Item entity
 class OrderedItem {
 
     /// Id of ordered item

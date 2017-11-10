@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Basket Subscription model
+/// Basket Subscription entity
 class Subscription {
 
     /// Id of subscription

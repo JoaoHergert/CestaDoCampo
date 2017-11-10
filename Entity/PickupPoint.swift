@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// The pickup point model
+/// The pickup point entity
 class PickupPoint {
 
     /// Id of the pickup point

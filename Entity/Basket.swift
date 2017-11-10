@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Basket Model
+/// Basket Entity
 class Basket {
 
     /// Id of basket

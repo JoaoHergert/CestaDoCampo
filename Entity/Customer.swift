@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Customer model
+/// Customer entity
 class Customer {
 
     /// Id of customer

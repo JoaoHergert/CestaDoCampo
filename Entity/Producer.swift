@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Producer model
+/// Producer Entity
 public class Producer {
     
     /// Id of producer

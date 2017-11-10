@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Product model
+/// Product entity
 class Product {
 
     /// Id of product

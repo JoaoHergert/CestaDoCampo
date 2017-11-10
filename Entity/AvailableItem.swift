@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// Available Item model
+/// Available Item entity
 class AvailableItem {
 
     /// Id of available item
