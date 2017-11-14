@@ -14,9 +14,6 @@ class AvailableItem {
     /// Id of available item
     public var id: Int?
 
-    /// Basket of itens
-    public var basket: Basket?
-
     /// Available product
     public var product: Product?
 
@@ -26,6 +23,4 @@ class AvailableItem {
     /// End date on wont be available
     public var end: Date?
 
-    /// Is an extra or normal product?
-    public var extra: Bool?
 }

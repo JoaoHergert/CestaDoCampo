@@ -8,10 +8,19 @@
 
 import UIKit
 
+/// Products Model
 class ProductModel {
+
+    /// Mock of products
     private static var mockProducts:[Product] = [Product]()
 
     init() {
+
+        if ProductModel.mockProducts.count > 0 {
+            return
+        }
+
+        /// Creating mock data
         let product1 = Product()
 
         product1.id = 1

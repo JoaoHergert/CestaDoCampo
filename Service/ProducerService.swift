@@ -8,11 +8,37 @@
 
 import UIKit
 
-class ProducerService {
-    func search(term: String, onlyDelivery: Bool, latitude: Double, longitude: Double) -> [Producer] {
-        let result = [Producer]()
+/// Producer Service API
 
-        return result
+class ProducerService {
+
+
+    /// Search for producers and itens geolocation based
+    ///
+    /// - Parameters:
+    ///   - term: Name of producer or product
+    ///   - onlyDelivery: Delivery or only pickup points
+    ///   - latitude: Latitude
+    ///   - longitude: Longitude
+    /// - Returns: Results of producers with distance calculetes
+    func search(term: String, onlyDelivery: Bool, latitude: Double, longitude: Double) -> [ProducerSearchResult] {
+
+        let model = ProducerModel()
+
+        let producers = model.all()
+        var results = [ProducerSearchResult]()
+
+        for producer in producers {
+
+            let result = ProducerSearchResult()
+            result.producer = producer
+            result.distance = 100
+
+            results.append(result)
+
+        }
+
+        return results
     }
 }
 

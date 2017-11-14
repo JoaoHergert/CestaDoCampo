@@ -56,11 +56,21 @@ public class Producer {
     /// Producer`s baskets
     private var baskets: [Basket] = [ Basket]()
 
+    /// Extra itens
+    private var extras: [ExtraItem] = [ ExtraItem ]()
+
     /// Add a Basket
     ///
     /// - Parameter basket: a basket
     func addBasket(basket: Basket) {
         self.baskets.append(basket)
+    }
+
+    /// Add a extra item
+    ///
+    /// - Parameter extra: Item extra
+    func addExtra(extra: ExtraItem) {
+        self.extras.append(extra)
     }
 
     /// Add a PickUp Point
@@ -80,6 +90,13 @@ public class Producer {
     /// Return the producer PickUp points
     func getPickupPoints() -> [PickupPoint] {
         return self.pickupPoints
+    }
+
+    /// Return the exra itens
+    ///
+    /// - Returns: Extra available item
+    func getExtraItens() -> [ ExtraItem ] {
+        return self.extras
     }
 
     
