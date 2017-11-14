@@ -36,7 +36,7 @@ public class Producer {
     public var country: String?
 
     /// Can delivery?
-    public var defivery: Bool?
+    public var delivery: Bool?
 
     /// Work with pickuppoints?
     public var pickuppoint: Bool?
@@ -49,5 +49,20 @@ public class Producer {
 
     /// Is the producer active?
     public var active: Bool?
+
+    /// Producer's pickup points
+    private var pickupPoints: [PickupPoint] = [PickupPoint]()
+
+    /// Return the producer PickUp points
+    func getPickupPoints() -> [PickupPoint] {
+        return [PickupPoint]()
+    }
+
+    /// Add a PickUp Point
+    ///
+    /// - Parameter point: a pickup point
+    func addPickupPoints(point: PickupPoint) {
+        self.pickupPoints.append(point)
+    }
     
 }

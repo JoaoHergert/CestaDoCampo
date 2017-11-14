@@ -31,7 +31,7 @@ class CustomerModel {
             CustomerModel.mockCustomerLogged!.latitude = -22.817532
             CustomerModel.mockCustomerLogged!.longitude = -47.074369
             CustomerModel.mockCustomerLogged!.password = "123123"
-            CustomerModel.mockCustomerLogged!.photo = UIImage(named: "customer.jpeg")
+            CustomerModel.mockCustomerLogged!.photo = UIImage(named: "customer")
 
         }
 
