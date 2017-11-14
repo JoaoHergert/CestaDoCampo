@@ -35,4 +35,19 @@ class PickupPoint {
     /// Longitude of the pickup point
     public var longitude: Double?
 
+    /// Producer's pickup days
+    private var days: [PickupDay] = [PickupDay]()
+
+    /// Return the producer PickUp Days
+    func getPickupDays() -> [PickupDay] {
+        return self.days;
+    }
+
+    /// Add a PickUp Day
+    ///
+    /// - Parameter point: a pickup day
+    func addPickupDays(day: PickupDay) {
+        self.days.append(day)
+    }
+
 }

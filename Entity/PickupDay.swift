@@ -20,6 +20,9 @@ class PickupDay {
     /// Day of week
     public var dayofweek: Int?
 
-    /// Time period to pickup the basket
-    public var time: String?
+    /// Time start period to pickup the basket
+    public var timeStart: String?
+
+    /// Time end period to pickup the basket
+    public var timeEnd: String?
 }
