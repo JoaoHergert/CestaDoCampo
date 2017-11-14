@@ -144,5 +144,11 @@ class ProducerModel {
 
         //end producer 2
 
+        ProducerModel.mockProducers.append(producer1)
+        ProducerModel.mockProducers.append(producer2)
+    }
+
+    func all() -> [Producer] {
+        return ProducerModel.mockProducers
     }
 }

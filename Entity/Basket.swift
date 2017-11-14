@@ -43,4 +43,21 @@ class Basket {
     /// Producer
     public weak var producer: Producer?
 
+    /// Basket Formation
+    public var itens: [BasketItem] = [BasketItem]()
+
+    /// Add item to the basket
+    ///
+    /// - Parameter item: Basket item
+    func addItem(item: BasketItem) {
+        self.itens.append(item)
+    }
+
+    /// Return all itens
+    ///
+    /// - Returns: all basket itens
+    func getItens() -> [BasketItem] {
+        return self.itens
+    }
+
 }

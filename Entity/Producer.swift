@@ -53,9 +53,14 @@ public class Producer {
     /// Producer's pickup points
     private var pickupPoints: [PickupPoint] = [PickupPoint]()
 
-    /// Return the producer PickUp points
-    func getPickupPoints() -> [PickupPoint] {
-        return [PickupPoint]()
+    /// Producer`s baskets
+    private var baskets: [Basket] = [ Basket]()
+
+    /// Add a Basket
+    ///
+    /// - Parameter basket: a basket
+    func addBasket(basket: Basket) {
+        self.baskets.append(basket)
     }
 
     /// Add a PickUp Point
@@ -64,5 +69,18 @@ public class Producer {
     func addPickupPoints(point: PickupPoint) {
         self.pickupPoints.append(point)
     }
+
+    /// Return all the baskets of the producer
+    ///
+    /// - Returns: all producers baskets
+    func getBaskets() -> [ Basket ] {
+        return self.baskets
+    }
+
+    /// Return the producer PickUp points
+    func getPickupPoints() -> [PickupPoint] {
+        return self.pickupPoints
+    }
+
     
 }
