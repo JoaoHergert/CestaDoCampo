@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pau-2U-KCR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xzK-cs-WyP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,21 +10,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Basket-->
+        <!--Cestas-->
         <scene sceneID="OYj-H7-hzY">
             <objects>
                 <viewController id="Pau-2U-KCR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wye-mn-Kxq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axk-zJ-QPw">
+                                <rect key="frame" x="194" y="307" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0cT-k3-Fxp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Basket" id="Bgi-4O-bgx"/>
+                    <navigationItem key="navigationItem" title="Cestas" id="MKm-b5-rX1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqA-4O-Gst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="131"/>
+            <point key="canvasLocation" x="735.20000000000005" y="130.88455772113943"/>
+        </scene>
+        <!--Basket-->
+        <scene sceneID="6cP-Mu-PMP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xzK-cs-WyP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Basket" id="Bgi-4O-bgx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fEi-uo-UEo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Pau-2U-KCR" kind="relationship" relationship="rootViewController" id="B1B-iu-fLi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGb-Td-Xnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="131"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8vw-Wi-NO5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Z1-ox-Wmd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,21 +10,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Producer-->
+        <!--Produtor-->
         <scene sceneID="PLg-xR-ZaG">
             <objects>
-                <viewController id="8vw-Wi-NO5" sceneMemberID="viewController">
+                <viewController id="8vw-Wi-NO5" customClass="ProducerViewController" customModule="CestaDoCampo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ydz-2t-aoE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZp-C5-dzG">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="alert:" destination="8vw-Wi-NO5" eventType="touchUpInside" id="L0S-VO-pYv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="a3i-cr-k5x"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Producer" id="hHP-vU-0gk"/>
+                    <navigationItem key="navigationItem" title="Produtor" id="gpC-7O-acw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3q-ZF-dld" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-508" y="284"/>
+        </scene>
+        <!--Producer-->
+        <scene sceneID="b04-p9-dCn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Z1-ox-Wmd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Producer" id="hHP-vU-0gk"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Oa-IJ-WgQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8vw-Wi-NO5" kind="relationship" relationship="rootViewController" id="w6V-Ay-REb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kaj-0D-NHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1503" y="284"/>
         </scene>
     </scenes>
 </document>
