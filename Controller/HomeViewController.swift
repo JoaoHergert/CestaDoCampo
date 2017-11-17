@@ -14,13 +14,23 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
+    let producers = ProducerService()
+    var nearProducers:[ProducerSearchResult] = [ProducerSearchResult]()
+    
+    
+    func getProducers() {
+        
+       nearProducers = producers.search(term: "sdasd", onlyDelivery: true, latitude: 34.5, longitude: 34.3)
+    
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     //  tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentBehavior.never
         
-        
+        getProducers()
         
         //backgroundView.backgroundColor = UIColor(patternImage: UIImage(named:"PLANTACAO_CANA_01a")!)
         
@@ -95,7 +105,11 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
    
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+    
+        
                 let alertController = UIAlertController(title: "Testing", message:
                     searchBar.text, preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
@@ -117,23 +131,32 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return nearProducers.count
     }
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "home", for: indexPath) as! ProducerTableViewCell
         
-        cell.name.text = "Produtor da Silva"
-        cell.pickup.text = "Rua Josué de Alencar, 45 - Campinas"
+        cell.name.text = nearProducers[indexPath.row].producer?.name
+        cell.pickup.text = nearProducers[indexPath.row].producer?.getPickupPoints()[0].address
         cell.photo.layer.cornerRadius = 50
-        cell.photo.image = #imageLiteral(resourceName: "temp_prod")
+        cell.photo.image = nearProducers[indexPath.row].producer?.coverPhoto
         cell.photo.clipsToBounds = true
         
         cell.updateUI()
         
         return cell
     }
+    
+    
+   
+    
+    
+    
+    
     
 }

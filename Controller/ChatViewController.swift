@@ -10,6 +10,7 @@ import UIKit
 
 class ChatViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet var backgroundView: UIView!
     
     override func viewDidLoad() {
@@ -84,6 +85,22 @@ extension ChatViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    
+    
+    //MARK: Selection
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       //performSegue(withIdentifier: "chat", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let details = segue.destination as! ConversationViewController
+        
+        
+        
+        
+        details.producer = (tableView.indexPathForSelectedRow?.row)!
+        
+    }
     
     
     

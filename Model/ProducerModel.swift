@@ -85,7 +85,7 @@ class ProducerModel {
         //producer 2
         let producer2 = Producer()
         producer2.id = 1
-        producer2.name = "Sítio Vale das Cabras"
+        producer2.name = "Fazenda Clube"
         producer2.address = "Estrada das Cabras, KM 13,5"
         producer2.city = "Joaquim Egídio"
         producer2.state = "SP"

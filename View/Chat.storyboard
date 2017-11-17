@@ -55,7 +55,7 @@
                                         <connections>
                                             <outlet property="name" destination="L6U-uK-uvm" id="9Tf-oj-9nP"/>
                                             <outlet property="photo" destination="mIT-45-gLZ" id="MaT-sA-xco"/>
-                                            <segue destination="hu9-PX-nVx" kind="show" id="9jX-H7-WFx"/>
+                                            <segue destination="hu9-PX-nVx" kind="show" identifier="chat" id="9jX-H7-WFx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -77,26 +77,39 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="backgroundView" destination="hzF-Fv-Ua4" id="9Ju-Rt-0g3"/>
+                        <outlet property="tableView" destination="RMU-Y3-h5j" id="qoK-MJ-sVr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6w3-KF-ZRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="894" y="-903"/>
         </scene>
-        <!--View Controller-->
+        <!--Conversation View Controller-->
         <scene sceneID="DDl-oZ-JlO">
             <objects>
-                <viewController id="hu9-PX-nVx" sceneMemberID="viewController">
+                <viewController id="hu9-PX-nVx" customClass="ConversationViewController" customModule="CestaDoCampo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tYa-Vn-2le">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G3-C6-8bV">
+                                <rect key="frame" x="16" y="284" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="G97-dz-zB8"/>
                     </view>
+                    <connections>
+                        <outlet property="teste" destination="0G3-C6-8bV" id="EL2-na-ugI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihC-o1-Dca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1866" y="-904"/>
+            <point key="canvasLocation" x="1864.8" y="-904.49775112443785"/>
         </scene>
         <!--Chat-->
         <scene sceneID="yQc-J4-TuF">

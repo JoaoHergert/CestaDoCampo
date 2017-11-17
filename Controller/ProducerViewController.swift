@@ -2,25 +2,26 @@
 //  ProducerViewController.swift
 //  CestaDoCampo
 //
-//  Created by João Agostinho Hergert on 10/11/17.
+//  Created by João Agostinho Hergert on 16/11/17.
 //  Copyright © 2017 João Hergert. All rights reserved.
 //
 
 import UIKit
 
 class ProducerViewController: UIViewController {
-
-    @IBAction func alert(_ sender: Any) {
+    
+    
+    @IBAction func teste(_ sender: Any) {
+        
         
         let alertController = UIAlertController(title: "Testing", message:
-            "Hello Produtor", preferredStyle: UIAlertControllerStyle.alert)
+            "fsfsdfs", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
         
         self.present(alertController, animated: true, completion: nil)
         
-        
-        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
