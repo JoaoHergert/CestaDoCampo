@@ -90,6 +90,7 @@ extension ChatViewController: UITableViewDataSource, UITableViewDelegate {
     //MARK: Selection
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        //performSegue(withIdentifier: "chat", sender: nil)
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
